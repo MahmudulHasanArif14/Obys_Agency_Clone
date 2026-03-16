@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Plain";
+  src: url("../fonts/plain-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plain";
+  src: url("../fonts/plain-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SilkSerif";
+  src: url("../fonts/silkserif-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SilkSerif";
+  src: url("../fonts/silkserif-regularitalic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #030303;
+  --accent-color: #151515;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: var(--primary-color);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Plain", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+}
+
+.cursor{
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  position: fixed;
+  pointer-events: none;
+  
+  mix-blend-mode: difference;
+  z-index: 9999;
+
+}
+
+.main {
+  position: relative;
+  background-color: #111;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--accent-color);
+
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--secondary-color);
+  padding: 25vh 10vw;
+}
+
+
+.line {
+  /* background-color: red; */
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+
+}
+
+.line h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Plain";
+}
+
+.line1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  gap: 1vw;
+}
+
+.line1-part1 h5,
+.line1-part1 h6 {
+  font-size: 3vw;
+  font-weight: 900;
+  font-family: "silkserif";
+}
+
+.line1-part1 h5 {
+  /* background: red; */
+  width: 5vw;
+  text-align: right;
+}
+
+.line h2 {
+  font-size: 5.5vw;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "SilkSerif";
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+  opacity: 0;
+}
+
+@keyframes anime {
+  0% {
+    font-family: 'plain';
+    font-weight: 900;
+    -webkit-text-stroke: .1px var(--primary-color);
+    color: #fff;
+    opacity: 1;
+  }
+
+
+  48% {
+    opacity: 0;
+    font-family: 'plain';
+    font-weight: 900;
+    -webkit-text-stroke: .1px var(--primary-color);
+    color: #fff;
+  }
+
+
+
+  50% {
+    opacity: 1;
+    font-family: 'silkserif';
+    font-weight: 900;
+    -webkit-text-stroke: .1px var(--primary-color);
+    color: transparent;
+  }
+
+
+
+
+
+
+  100% {
+    opacity: 0;
+    font-family: 'silkserif';
+    font-weight: 900;
+    -webkit-text-stroke: .1px var(--primary-color);
+    color: transparent;
+  }
+
+}
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 4.5vw;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  display: inline-block;
+  font-size: 1vw;
+  font-weight: 200;
+  font-family: "Plain";
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all .3s ease;
+}
+
+
+
+.hero {
+  /* background-color: red; */
+  width: 72%;
+  height: fit-content;
+  margin-left: 27%;
+ 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999999;
+
+
+}
+
+.hero:nth-child(2) {
+  margin-top: 18vh;
+}
+
+.hero h1,h2,h3 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+  font-weight: 600;
+  font-family: "Plain";
+}
+
+
+.hero h2:hover, .hero h3:hover {
+  -webkit-text-stroke: 2px  var(--primary-color);
+  color: transparent;
+  font-weight: 500;
+
+}
