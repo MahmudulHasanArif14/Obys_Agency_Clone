@@ -67,7 +67,7 @@ timeLine.from(".navbar",{
 });
 
 timeLine.from("#hero1,#hero2,#hero3,#hero4",{
-    y: 120,
+    y: 140,
     stagger: 0.25,
     opacity: 0,
     duration: 0.6,
