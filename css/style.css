@@ -42,6 +42,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: var(--primary-color);
+  
 }
 
 html,
@@ -52,9 +53,7 @@ body {
 
 }
 
-body {
-  overflow-x: hidden;
-}
+
 
 .cursor {
   height: 2vw;
@@ -70,16 +69,42 @@ body {
 }
 
 .main {
-  position: relative;
+  width: 100%;
+  height: 100%;
+
   background-color: #111;
+
 }
 
 .page1 {
+ 
   width: 100%;
   height: 100vh;
   background-color: var(--accent-color);
-
 }
+
+
+
+
+
+/* .hero:nth-child(2)::before {
+  
+    content: "01";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    color: var(--primary-color);
+    top: -17%;
+    right: 5%;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "SilkSerif";
+  text-transform: uppercase;
+
+} */
+
+
 
 .loader {
   height: 100%;
@@ -221,8 +246,8 @@ body {
   width: 72%;
   height: fit-content;
   margin-left: 27%;
-
-  overflow: hidden;
+  
+  
   display: flex;
   align-items: center;
   position: relative;
@@ -429,4 +454,127 @@ h3 {
   width: 100%;
   background-color: var(--accent-color);
   position: relative;
+  
+}
+
+.page5 .elem,.elem2{
+  
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: 1vw;
+
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.elem h1{
+  font-size: 6vw;
+  -webkit-text-stroke: 1px var(--primary-color);
+  color: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+    animation: marqueeeCopy 12s linear infinite;
+}
+.elem2 h1{
+    font-size: 7vw;
+      -webkit-text-stroke: 1px var(--primary-color);
+      color: transparent;
+      font-weight: 500;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 16px;
+      animation: marqueeeCopyReverse 15s linear infinite;
+}
+
+
+footer {
+  min-height: 80vh;
+  width: 100%;
+  background-color: var(--accent-color);
+  position: relative;
+  padding-left: 28vw;
+  padding-right: 2vw;
+}
+
+footer h1 {
+  font-size: 7vw;
+  font-weight: 600;
+  font-family: "Plain";
+  width: 60vw;
+  text-transform: uppercase;
+  position: relative;
+
+}
+footer h1::before{
+  content: "04";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "SilkSerif";
+  width: 60vw;
+  top: 8%;
+  left: -12%;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.footer-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2.3vw 4.5vw;
+}
+.footer-container h6{
+  font-size: 1vw;
+  font-weight: 200;
+  font-family: "Plain";
+  margin-bottom: 1.5vw;
+}
+
+.footer-container h5{
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: "Plain";
+  margin: 0.2vh 0;
+}
+
+.footer-container .box{
+  width: 20%;
+}
+
+footer .underline {
+  text-decoration: underline;
+  height: 1px;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 2vw 0;
+}
+footer>h5{
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+@keyframes marqueeeCopy {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+@keyframes marqueeeCopyReverse {
+  0% {
+    transform: translateX(calc(-100% - 20px));
+
+  }
+
+  100% {
+      transform: translateX(calc(0 + 20px));
+  }
 }
