@@ -71,7 +71,6 @@ body {
 .main {
   width: 100%;
   height: 100%;
-
   background-color: #111;
 
 }
@@ -87,13 +86,11 @@ body {
 
 
 
-/* .hero:nth-child(2)::before {
-  
+.hero:nth-child(2)::before {
     content: "01";
     position: absolute;
     width: 100%;
     height: 100%;
-
     color: var(--primary-color);
     top: -17%;
     right: 5%;
@@ -102,7 +99,7 @@ body {
   font-family: "SilkSerif";
   text-transform: uppercase;
 
-} */
+}
 
 
 
@@ -119,7 +116,7 @@ body {
 .line {
   /* background-color: red; */
   height: fit-content;
-  overflow: hidden;
+ 
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -246,8 +243,6 @@ body {
   width: 72%;
   height: fit-content;
   margin-left: 27%;
-  
-  
   display: flex;
   align-items: center;
   position: relative;
@@ -297,7 +292,7 @@ h3 {
   height: 100vh;
   background-color: var(--accent-color);
   padding-top: 7vh;
-  position: relative;
+ 
 }
 
 .video-container img {
@@ -351,9 +346,119 @@ h3 {
 .page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   position: relative;
+  padding: 17vh 2vw;
 }
+
+.page3 h1 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+  font-weight: 600;
+  font-family: "Plain";
+  text-align: center;
+}
+
+.page3 .underline {
+  text-decoration: underline;
+  height: 2px;
+  width: 70%;
+  background-color: var(--primary-color);
+  margin: 3vh 20vw;
+}
+
+
+#image-div-container{
+  position: relative;
+  padding: 1vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3vw;  
+}
+.image-div{
+  height: 33vw;
+  width: 30vw;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+
+.image-div:nth-child(1){
+  height: 29vw;
+  width: 22vw;
+}
+.image-div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.page3-circle{
+  height: 20vw;
+  width:20vw;
+  border:2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.page3-circle .button__arrow{
+  height: 40%;
+}
+
+.rotateCircle{
+  rotate:-45deg;
+}
+.circle-in{
+  border-radius: 50%;
+  height:100%;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  background-color: var(--primary-color);
+  color:var(--accent-color);
+  display: flex;
+
+  align-items: center;
+  scale: 0;
+   justify-content: center;
+    transition: all 0.3s ease;
+      transition-delay: 0.3s;
+  
+}
+
+.circle-in p{
+  
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: 600;
+  color: var(--accent-color);
+  font-family: "Plain";
+  width: 60%;
+  scale: 0;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.page3-circle:hover .circle-in{
+  scale: 1;
+}
+.page3-circle:hover .circle-in p{
+  scale: 1;
+}
+ .rotateCircle:hover {
+  rotate: 0deg;
+}
+
 
 
 .page4 {
@@ -450,10 +555,11 @@ h3 {
 }
 
 .page5{
-  min-height: 100vh;
+  min-height: 40vh;
   width: 100%;
   background-color: var(--accent-color);
   position: relative;
+
   
 }
 
@@ -491,7 +597,8 @@ h3 {
 }
 
 
-footer {
+.footer {
+  
   min-height: 80vh;
   width: 100%;
   background-color: var(--accent-color);
@@ -500,7 +607,7 @@ footer {
   padding-right: 2vw;
 }
 
-footer h1 {
+.footer h1 {
   font-size: 7vw;
   font-weight: 600;
   font-family: "Plain";
@@ -509,7 +616,7 @@ footer h1 {
   position: relative;
 
 }
-footer h1::before{
+.footer h1::before{
   content: "04";
   position: absolute;
   font-size: 3vw;
@@ -546,14 +653,14 @@ footer h1::before{
   width: 20%;
 }
 
-footer .underline {
+.footer .underline {
   text-decoration: underline;
   height: 1px;
   width: 100%;
   background-color: var(--primary-color);
   margin: 2vw 0;
 }
-footer>h5{
+.footer>h5{
   font-weight: 500;
   font-size: 1vw;
 }
@@ -577,4 +684,12 @@ footer>h5{
   100% {
       transform: translateX(calc(0 + 20px));
   }
+}
+
+
+
+._canvas_container
+{
+  z-index: 9999!important;
+  pointer-events: none;
 }
