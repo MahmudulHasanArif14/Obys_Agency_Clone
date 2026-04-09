@@ -42,7 +42,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: var(--primary-color);
-
 }
 
 html,
@@ -62,10 +61,8 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.384);
   position: fixed;
   pointer-events: none;
-
   mix-blend-mode: difference;
   z-index: 9999;
-
 }
 
 .main {
@@ -76,7 +73,6 @@ body {
 }
 
 .page1 {
-
   width: 100%;
   height: 100vh;
   background-color: var(--accent-color);
@@ -113,6 +109,7 @@ body {
 }
 
 
+/* loader content */
 .line {
   /* background-color: red; */
   height: fit-content;
@@ -246,9 +243,6 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  
-
-
 }
 
 .hero:nth-child(2) {
@@ -282,8 +276,6 @@ h3 {
   color: transparent;
   border-bottom: .5vw solid transparent;
   font-weight: 500;
-
-
 }
 
 
@@ -293,7 +285,6 @@ h3 {
   background-color: var(--accent-color);
   padding-top: 7vh;
   position: relative;
-
 }
 
 /* .video-container img {

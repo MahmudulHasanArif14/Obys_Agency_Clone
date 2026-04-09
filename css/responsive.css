@@ -1,0 +1,394 @@
+@media (max-width: 768px) {
+    .page1 {
+        height: 40vh;
+    }
+
+
+    .hero:nth-child(2)::before {
+        top: -28%;
+        right: 10%;
+        font-size: 5.5vw;
+
+
+    }
+
+        .loader {
+            padding: 30vh 30vw;
+        }
+
+
+         
+                .page2 {
+                   
+                    height: 60vh;
+
+                    padding-top: 4vh;
+                    position: relative;
+                }
+
+        
+
+                /* started here  */
+
+                                .video-container {
+                                    height: 50vh;
+
+                                    left: 18%;
+                                 
+                                }
+                
+                               
+                
+                
+                
+                             
+                
+                                .video-cursor {
+                                    height: 15vw;
+                                    width: 15vw;
+                                    top: -5%;
+                                    left: 70%;
+                                    z-index: 99;
+                                }
+                
+                                .video-cursor i {
+                                    font-size: 6vw;
+                                }
+                
+                
+                                .page3 {
+                                    min-height: 60vh;
+                                    position: relative;
+                                    padding: 0.6vh 5vw;
+                                }
+                
+                              
+                
+                                .page3 .underline {
+                            
+                                    width: 100%;
+                                
+                                    margin: 3vh 10vw;
+                                }
+                
+                
+                              
+                
+                            
+                
+                
+                        
+                             
+                
+                              
+                
+                
+                
+                                .page4 {
+                                    min-height: 60vh;
+                                    width: 100%;
+                                    /* background-color: var(--secondary-color); */
+                                    position: relative;
+                                    padding-top: 0.1vh;
+                
+                                }
+                
+                                .page4-content {
+                                    width: 72vw;
+                                    position: relative;
+                                    margin-left: 28%;
+                                }
+                
+                                .page4-content h1 {
+                                    font-size: 7.2vw;
+                                    text-transform: uppercase;
+                                    line-height: 7.2vw;
+                                    font-weight: 600;
+                                    font-family: "Plain";
+                                }
+                
+                                .page4-content>p {
+                                    font-size: 2.05vw;
+                                    width: 50%;
+                                    font-weight: 200;
+                                    font-family: "Plain";
+                                    margin-top: 3vh;
+                                    margin-bottom: 3vh;
+                                }
+                
+                                .page4 .underline {
+                                    text-decoration: underline;
+                                    height: 2px;
+                                    width: 100%;
+                                    background-color: var(--primary-color);
+                                    margin: 3vh 0;
+                                }
+                
+                                .page4-flex {
+                                    display: flex;
+                
+                                }
+                
+                                .page4-flex img {
+                                    width: 50%;
+                                    height: 70vh;
+                                    object-fit: cover;
+                                }
+                
+                                .page4-flex p {
+                                    font-size: 1vw;
+                                    width: 50%;
+                                    font-weight: 200;
+                                    font-family: "Plain";
+                                    padding: 0 2vw;
+                                    margin-left: 1vw;
+                                }
+                
+                                .page4-blue-box {
+                                    background-color: #3f7df4;
+                                    width: 33vw;
+                                    padding: 2.5vw 3vw;
+                                    position: relative;
+                                    margin-top: -35vh;
+                                    margin-left: 26vw;
+                                }
+                
+                                .blue-container {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: space-between;
+                
+                                    padding: 1.7vw 0;
+                                    border-bottom: 2px solid var(--primary-color);
+                
+                                }
+                
+                                .blue-container p {
+                                    width: 40%;
+                                    font-size: .8vw;
+                                    font-weight: 200;
+                                    font-family: "Plain";
+                                }
+                
+                                .blue-container h4 {
+                                    font-size: 1.4vw;
+                                    font-weight: 600;
+                                    font-family: "Plain";
+                
+                                }
+                
+                                .page5 {
+                                    min-height: 30vh;
+                                    width: 100%;
+                                    background-color: var(--accent-color);
+                                    position: relative;
+                
+                
+                                }
+                
+                                .page5 .elem,
+                                .elem2 {
+                
+                                    white-space: nowrap;
+                                    overflow-x: hidden;
+                                    margin-bottom: 1vw;
+                
+                                }
+                
+                                ::-webkit-scrollbar {
+                                    display: none;
+                                }
+                
+                
+                                .elem h1 {
+                                    font-size: 6vw;
+                                    -webkit-text-stroke: 1px var(--primary-color);
+                                    color: transparent;
+                                    font-weight: 500;
+                                    text-transform: uppercase;
+                                    display: inline-block;
+                                    margin-right: 16px;
+                                    animation: marqueeeCopy 12s linear infinite;
+                                }
+                
+                                .elem2 h1 {
+                                    font-size: 7vw;
+                                    -webkit-text-stroke: 1px var(--primary-color);
+                                    color: transparent;
+                                    font-weight: 500;
+                                    text-transform: uppercase;
+                                    display: inline-block;
+                                    margin-right: 16px;
+                                    animation: marqueeeCopyReverse 15s linear infinite;
+                                }
+                
+                
+                                .footer {
+                
+                                    min-height: 40vh;
+                                    width: 100%;
+                                    background-color: var(--accent-color);
+                                    position: relative;
+                                    padding-left: 28vw;
+                                    padding-right: 2vw;
+                                }
+                
+                                #footer-text {
+                                    position: relative;
+                                    /* background-color: red; */
+                                }
+                
+                                #footer-text h1 {
+                                    font-size: 7vw;
+                                    font-weight: 600;
+                                    font-family: "Plain";
+                                    width: 60vw;
+                                    text-transform: uppercase;
+                                    position: relative;
+                
+                                }
+                
+                                #footer-text h1 span,
+                                #footer-text h2 span {
+                                    display: inline-block;
+                                    will-change: opacity;
+                                }
+                
+                                #footer-text h1::before {
+                                    content: "04";
+                                    position: absolute;
+                                    font-size: 3vw;
+                                    font-weight: 100;
+                                    font-family: "SilkSerif";
+                                    width: 60vw;
+                                    top: 8%;
+                                    left: -12%;
+                                    text-transform: uppercase;
+                                    color: var(--primary-color);
+                                }
+                
+                
+                                #footer-text h2 {
+                                    font-size: 7vw;
+                                    position: absolute;
+                                    top: 10%;
+                                    font-weight: 600;
+                                    opacity: 1;
+                                    left: 0;
+                                    font-family: "SilkSerif";
+                                }
+                
+                                #footer-text h2 span {
+                                    font-family: "SilkSerif";
+                                    opacity: 0;
+                                    -webkit-text-stroke: 1px #fff;
+                                    color: transparent;
+                                }
+                
+                                .footer-container {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: space-between;
+                                    padding: 2.3vw 4.5vw;
+                                }
+                
+                                .footer-container h6 {
+                                    font-size: 1vw;
+                                    font-weight: 200;
+                                    font-family: "Plain";
+                                    margin-bottom: 1.5vw;
+                                }
+                
+                                .footer-container h5 {
+                                    font-size: 1.2vw;
+                                    font-weight: 600;
+                                    font-family: "Plain";
+                                    margin: 0.2vh 0;
+                                }
+                
+                                .footer-container .box {
+                                    width: 20%;
+                                }
+                
+                                .footer .underline {
+                                    text-decoration: underline;
+                                    height: 1px;
+                                    width: 100%;
+                                    background-color: var(--primary-color);
+                                    margin: 2vw 0;
+                                }
+                
+                                .footer>h5 {
+                                    font-weight: 500;
+                                    font-size: 1vw;
+                                }
+                
+                                @keyframes marqueeeCopy {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+                
+                                    100% {
+                                        transform: translateX(calc(-100% - 20px));
+                                    }
+                                }
+                
+                                @keyframes marqueeeCopyReverse {
+                                    0% {
+                                        transform: translateX(calc(-100% - 20px));
+                
+                                    }
+                
+                                    100% {
+                                        transform: translateX(calc(0 + 20px));
+                                    }
+                                }
+                
+                
+                
+                                ._canvas_container {
+                                    z-index: 9999 !important;
+                                    pointer-events: none;
+                                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
