@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 768px) {
     .page1 {
         height: 53vh;
@@ -37,6 +44,10 @@
         font-size: 4.5vw;
         font-weight: 300;
         font-family: "Plain";
+
+        -webkit-transition: all .3s ease;
+
+        -o-transition: all .3s ease;
 
         transition: all .3s ease;
 
@@ -139,6 +150,8 @@
     }
 
     .page4-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
     }
@@ -146,6 +159,7 @@
     .page4-flex img {
         width: 50%;
         height: 70vh;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -168,8 +182,14 @@
     }
 
     .blue-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
 
         padding: 1.7vw 0;
@@ -222,6 +242,7 @@
         text-transform: uppercase;
         display: inline-block;
         margin-right: 16px;
+        -webkit-animation: marqueeeCopy 12s linear infinite;
         animation: marqueeeCopy 12s linear infinite;
     }
 
@@ -233,6 +254,7 @@
         text-transform: uppercase;
         display: inline-block;
         margin-right: 16px;
+        -webkit-animation: marqueeeCopyReverse 15s linear infinite;
         animation: marqueeeCopyReverse 15s linear infinite;
     }
 
@@ -300,8 +322,14 @@
     }
 
     .footer-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 2.3vw 4.5vw;
     }
